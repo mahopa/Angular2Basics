@@ -1,0 +1,9 @@
+h2{
+  color:red
+}
+.repeated-items{
+  border: 1px solid black;
+  padding:.75em;
+  width:200px;
+  text-align: center;
+}

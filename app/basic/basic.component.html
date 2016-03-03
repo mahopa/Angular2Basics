@@ -1,0 +1,15 @@
+<h2>Basic Component</h2>
+<h3>Obligatory two way data binding example</h3>
+<input type="text" [(ngModel)]="someProperty">
+{{someProperty}}<br>
+<h3>Style binding example<h3>
+<div [style.color]="color">
+  Colored Text<br>
+  <input type="text" [(ngModel)]="color" >
+</div>
+<h3>Click Action Example</h3>
+Click Count:{{count}}<br/>
+<button (click)="incrementCount()">Click Binding 1: (click)="incrementCount()"</button>
+<button on-click="incrementCount()">Click Binding 2: on-click="incrementCount()"</button>
+<h3>Repeating Multiple Items</h3>
+<div *ngFor="#item of items" class="repeated-items">{{item.name}}</div>
